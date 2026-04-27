@@ -22,5 +22,5 @@ def EulerODE(f,t0,y0,nmax,h):
         t_values.append(t)
         y_values.append(y)
 
-    return t_values,y_values
+    return  np.array(t_values), np.array(y_values)
 
