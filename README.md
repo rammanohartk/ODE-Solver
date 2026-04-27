@@ -1,4 +1,7 @@
 # ODE-Solver
+
+This project implements numerical methods (Euler, RK4) to solve ODEs.
+
 ## Euler Method Implementation
 
 This repository implements a basic numerical solver for ordinary differential equations (ODEs) using the Forward Euler method.
