@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 def EulerODE(f,t0,y0,nmax,h):
