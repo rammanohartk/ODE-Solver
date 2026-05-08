@@ -1,33 +1,70 @@
 # ODE-Solver
 
-This project implements numerical methods (Euler, RK4) to solve ODEs.
+A beginner computational physics project implementing numerical ordinary differential equation (ODE) solvers in Python and applying them to physical systems such as free fall and pendulum motion.
 
-## Euler Method Implementation
+## Methods Implemented
 
-This repository implements a basic numerical solver for ordinary differential equations (ODEs) using the Forward Euler method.
+* Euler Method
+* RK4 (Runge-Kutta 4th Order)
+* RK5 (Runge-Kutta 5th Order)
 
-## Objective
-To study numerical solutions of ODEs and analyze the accuracy and convergence behavior of the Euler method.
+## Topics Covered
 
-## Method
-The Euler method is implemented for solving equations of the form:
+### Numerical Analysis
 
-    dy/dt = f(t, y)
+* Error analysis
+* Relative and absolute error
+* Convergence analysis
+* Order of accuracy
+* Log-scale error visualization
 
-with numerical update:
+### Physical Systems
 
-    y_{n+1} = y_n + h f(t_n, y_n)
+* Free fall motion
+* Free fall with linear drag
+* Free fall with quadratic drag
+* Simple pendulum dynamics
+* Energy conservation
+* Phase-space analysis
 
-## Validation
-The implementation is tested using the exponential decay equation:
+## Repository Structure
 
-    dy/dt = -y
+```text
+ODE-Solver/
+│
+├── notebooks/
+│   ├── 01_Euler-Method.ipynb
+│   ├── 02_RK-Method.ipynb
+│   ├── 03_Free fall.ipynb
+│   └── 04_Pendulum.ipynb
+│
+├── src/
+│   ├── euler.py
+│   └── rkmethods.py
+│
+└── README.md
+```
 
-which has the analytical solution:
+## Motivation
 
-    y(t) = e^{-t}
+This project was started as an effort to better understand numerical methods used in computational physics. The motivation also came from a PhD interview question regarding solving ODEs/PDEs numerically, which encouraged me to implement these methods practically rather than only studying the theory.
 
-## Results
-- The numerical solution closely matches the analytical solution for small step sizes.
-- Error analysis shows dependence on step size h.
-- Convergence study confirms first-order accuracy (Error ∝ h).
+## Tools Used
+
+* Python
+* NumPy
+* Matplotlib
+* Jupyter Notebook
+
+## Learning Goals
+
+* Understanding numerical ODE solving
+* Comparing solver accuracy and stability
+* Connecting numerical methods with physical systems
+* Improving scientific programming skills
+
+
+
+## Notes
+
+This project was developed as a learning project. AI tools were used for assistance in debugging, formatting, visualization improvements, and explanation refinement while learning the numerical methods and implementing the solvers.
